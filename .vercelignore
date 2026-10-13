@@ -1,7 +1,7 @@
 # Only the product site and the working prototype are public.
 #
 # docs/ in particular holds the risk register and the judge-proofing notes, which
-# were readable at clash-fit.vercel.app/docs/ until this file existed. None of it
+# were readable at /docs/ on the deployed site until this file existed. None of it
 # is deleted; it is simply not deployed.
 #
 # app.html, src/ and config/ MUST ship. The Phase 1 submission gives judges this

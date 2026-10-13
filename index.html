@@ -87,6 +87,7 @@ h1 em,h2 em{font-style:normal;color:var(--ember-ink)}
   display:inline-flex;align-items:center;gap:12px;padding:16px 22px;
   font-family:var(--body);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
   text-decoration:none;border:1px solid transparent;transition:background .15s,color .15s,border-color .15s,transform .15s;
+  background:none;cursor:pointer;
 }
 .btn::after{content:"↗";font-weight:500;font-size:15px}
 .btn--ember{background:var(--ember);color:#0b0b0c}
@@ -167,6 +168,7 @@ h1 em,h2 em{font-style:normal;color:var(--ember-ink)}
 .hero__in{width:100%;padding-block:clamp(64px,8vw,112px) clamp(34px,4vw,54px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(28px,4vw,64px);align-items:end}
 .hero .kicker{margin-bottom:24px}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.dl__fine{margin-top:14px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .hero__meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
 .hero__stats{display:flex;flex-wrap:wrap;gap:clamp(24px,3.2vw,50px);margin-top:30px;text-align:left}
 .hero__stats b{display:block;font-family:var(--display);font-weight:900;font-size:clamp(34px,3.4vw,50px);line-height:.9;color:var(--ink)}
@@ -922,7 +924,7 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
       <a href="#device">Device</a>
       <a href="#privacy">Privacy</a>
     </nav>
-    <button class="btn btn--ember" data-waitlist type="button">Join the waitlist</button>
+    <a class="btn btn--ember" href="https://github.com/UjjwalPardeshi/ClashFit/releases/latest/download/Fitmon-android.apk">Download the app</a>
   </div>
 </header>
 
@@ -936,7 +938,7 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
     <defs><path id="ring" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
     <text><textPath href="#ring">Email sign-in · Leaderboards · On-device · Scores sync · </textPath></text>
     <circle cx="60" cy="60" r="20" fill="var(--ember)"/>
-    <text class="cf" x="60" y="68" text-anchor="middle">CF</text>
+    <text class="cf" x="60" y="68" text-anchor="middle">FM</text>
   </svg>
   <div class="shell hero__in">
     <div>
@@ -944,9 +946,10 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
       <h1>Your body is<br>the controller.<br><em>Your camera is<br>the referee.</em></h1>
       <p class="lede">Real, camera-verified effort in. Boss damage out. Every rep is graded on depth, range, tempo and alignment. Your camera never leaves your phone, only your scores sync to the cloud.</p>
       <div class="hero__cta">
-        <button class="btn btn--ember" data-waitlist type="button">Join the waitlist</button>
+        <a class="btn btn--ember" href="https://github.com/UjjwalPardeshi/ClashFit/releases/latest/download/Fitmon-android.apk">Download for Android</a>
         <a class="btn btn--line" href="#loop">How it works</a>
       </div>
+      <p class="dl__fine">APK &middot; Android 10+ &middot; 64-bit &middot; sideload, not on the Play Store yet</p>
       <div class="hero__meta"><span>Built for iQOO 15</span><span>Email sign-in</span><span>No equipment</span><span>Train in airplane mode</span></div>
       <div class="hero__stats">
         <div><b>56</b><span>Exercises</span></div>
@@ -2058,10 +2061,10 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
     <h2>Prop your phone.<br><em>Fight it out.</em></h2>
     <p class="lede">One download. Email sign-in, no equipment, free core forever.</p>
     <div class="hero__cta">
-      <button class="btn btn--ember" data-waitlist type="button">Join the waitlist</button>
-      <a class="btn btn--line" href="#loop">How it works</a>
+      <a class="btn btn--ember" href="https://github.com/UjjwalPardeshi/ClashFit/releases/latest/download/Fitmon-android.apk">Download for Android</a>
+      <button class="btn btn--line" data-waitlist type="button">Join the waitlist</button>
     </div>
-    <div class="stores"><span class="tag">Android · Play Store</span><span class="tag">Free core, forever</span></div>
+    <div class="stores"><span class="tag">Android 10+ · 64-bit</span><span class="tag">Sideload APK</span><span class="tag">Free core, forever</span></div>
   </div></div>
 </section>
 
@@ -2079,7 +2082,6 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
       <div><h4>More</h4><ul><li><a href="#library">Exercise library</a></li><li><a href="#screens">Every screen</a></li><li><a href="#clinic">Clinic mode</a></li><li><a href="/credits">Credits</a></li></ul></div>
     </div>
     <div class="foot__base">
-      <span>Fitmon · iQOO Hackathon 2026 · Pune City Battle</span>
       <span>Not a medical device</span>
     </div>
   </div>
@@ -2099,7 +2101,7 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
         <input class="wl__input" id="wl-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" enterkeyhint="go">
         <button class="btn btn--ember" type="submit">Join the waitlist</button>
       </form>
-      <p class="wl__fine">Prototype for the iQOO Hackathon 2026 &mdash; this form does not store or send anything yet.</p>
+      <p class="wl__fine">This form does not store or send anything yet &mdash; the app itself is ready to download now.</p>
     </div>
 
     <div id="wl-done" hidden>
